@@ -1,0 +1,23 @@
+<h2>Detalle del libro</h2>
+
+@if (libro(); as libroActual) {
+  <div class="detalle-libro">
+    <p><strong>ID:</strong> {{ libroActual.id }}</p>
+    <p><strong>Título:</strong> {{ libroActual.titulo }}</p>
+    <p><strong>Autor:</strong> {{ libroActual.autor }}</p>
+    <p><strong>Año de publicación:</strong> {{ libroActual.anioPublicacion }}</p>
+    <p><strong>Género:</strong> {{ libroActual.genero }}</p>
+  </div>
+
+  <div class="detalle-acciones">
+    <a [routerLink]="['/libros', libroActual.id, 'editar']">
+      Editar libro
+    </a>
+
+    <a routerLink="/libros">
+      Volver al listado
+    </a>
+  </div>
+} @else {
+  <p>No hay información del libro para mostrar.</p>
+}

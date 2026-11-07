@@ -1,0 +1,73 @@
+/* Listado de libros */
+h2 {
+  color: #2563a6;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.lista-libros {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Tarjeta individual */
+.libro-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px;
+  background-color: #f3f9fd;
+  border: 1px solid #dbeefa;
+  border-radius: 8px;
+}
+
+.libro-info a {
+  color: #2563a6;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.libro-info a:hover {
+  text-decoration: underline;
+}
+
+.libro-info p {
+  margin: 5px 0 0;
+  color: #56718a;
+}
+
+/* Acciones CRUD */
+.libro-acciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.libro-acciones a,
+.libro-acciones button {
+  padding: 8px 12px;
+  border: 1px solid #b8d7ee;
+  border-radius: 6px;
+  background-color: white;
+  color: #2563a6;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.libro-acciones a:hover,
+.libro-acciones button:hover {
+  background-color: #dbeefa;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+  .libro-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

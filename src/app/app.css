@@ -1,0 +1,51 @@
+/* Encabezado principal */
+.encabezado {
+  background-color: #2563a6;
+  color: white;
+  padding: 24px 20px;
+}
+
+.encabezado-contenido {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.encabezado h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.encabezado p {
+  margin: 6px 0 0;
+  color: #dbeefa;
+}
+
+/* Navegación */
+.navegacion {
+  background-color: #dbeefa;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.navegacion a {
+  color: #2563a6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navegacion a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.contenido {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 24px;
+  background-color: white;
+  border: 1px solid #dbeefa;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(37, 99, 166, 0.06);
+}

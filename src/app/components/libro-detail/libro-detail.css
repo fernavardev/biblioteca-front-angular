@@ -1,0 +1,49 @@
+/* Título del detalle */
+h2 {
+  color: #2563a6;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+/* Tarjeta de información */
+.detalle-libro {
+  padding: 24px;
+  background-color: #f3f9fd;
+  border: 1px solid #dbeefa;
+  border-radius: 8px;
+}
+
+.detalle-libro p {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #dbeefa;
+}
+
+.detalle-libro p:last-child {
+  border-bottom: none;
+}
+
+.detalle-libro strong {
+  color: #2563a6;
+}
+
+/* Acciones de navegación */
+.detalle-acciones {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.detalle-acciones a {
+  padding: 10px 16px;
+  background-color: #2563a6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.detalle-acciones a:hover {
+  background-color: #1d4f85;
+}
